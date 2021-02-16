@@ -1,0 +1,169 @@
+.comments{
+    border: 2px dashed purple;
+    &__conversations{
+        @extend .container;
+        height: 100%;
+        padding: 0  1rem;
+        
+        @include tablet {
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        @include desktop {
+            margin: 0;
+            padding: 0 11.25rem;
+            // width:75%;
+        }
+    }
+
+    &__heading{
+        margin:0 auto;
+        padding-bottom: 32px;
+        font-weight: 600;
+        font-size:1.5rem;
+        line-height: 2rem;
+        overflow: auto;
+
+        @include tablet {
+            font-size:2.25rem;
+            line-height:2.75rem; 
+        }
+
+        @include desktop {
+            padding-bottom:3.5rem;
+            padding-top:3rem;
+        }
+    }
+
+    &__commentscontainer{
+        display: flex;
+        
+        //overflow: auto;
+
+        @include tablet {
+            
+            // display: flex;
+            // justify-content: center;
+            // min-width: 528px;
+        }
+
+        @include desktop {
+            display: flex;
+            //justify-content: center;
+        }
+    }
+
+    &__userimage{
+        width: 48px;
+        height: 48px;
+        border-radius: 90%;
+        margin:1.25rem 1.25rem 0 0;  
+    }
+
+    &__form{
+        @include tablet {
+            // display:flex;
+            // align-items: flex-start;
+            // justify-items:center;
+        }  
+
+        @include desktop {
+        //    min-width: 460px;
+        }       
+    }  
+    
+    &__testingbutton{
+        @include tablet{
+            display: flex;
+            // align-items: flex-start;
+            // justify-items:baseline;
+        }
+    }
+    
+    &__testing{
+        @include tablet {
+            // display: flex;
+        }
+
+    }
+
+    &__formlabel{
+        margin:0 auto;
+        color:$silver;
+        font-family: AvenirNext LT Pro;
+        font-size:14px;
+        line-height:22px;
+        font-weight: 500;
+        padding-bottom: 0.5rem;     
+        
+        @include tablet{
+            // display:flex;
+            
+        }
+    }   
+    &__forminput{
+        width: 100%;
+        height: auto;
+        border: 0.0625rem solid $silver;
+        background-color: $alabaster;
+        border-radius:0.25rem;
+        padding:16px;
+        font-family: AvenirNext LT Pro;
+        font-size:14px;
+        line-height:22px;
+        font-weight: 400;
+        color:$black;
+        margin-bottom: 16px; 
+        // overflow:unset;            
+        @include tablet{
+            width: 100%;
+        } 
+        
+        &:active{
+            border: 0.125rem solid $black;
+        }                
+    }
+
+    &__formsubmit{
+        width: 100%;
+        font-family: AvenirNext LT Pro;
+        font-size:14px;
+        line-height:22px;
+        font-weight: 600;
+        color:$white;
+        background-color:$blue;
+        border:none;
+        border-radius: 0.25rem;
+        padding-top: 0.6875rem;
+        padding-bottom: 0.6875rem;
+        margin-bottom: 24px;
+
+        @include tablet {
+            // width: 36%;
+            // padding-left:0.625rem;
+            // padding-right:0.625rem;
+            // font-size:1rem;
+            // line-height:1.5rem;
+            // display: block;
+            // margin-left: auto;
+            // margin-right: 0;
+        }
+
+        @include desktop {
+            padding-left: 0.9375rem;
+            padding-right: 0.9375rem;
+        }
+    }   
+    
+    &__divider{
+        border:0;
+        border-top: 0.0625rem solid $mercury;
+        margin: 0;
+    }
+}    
+
+// .commentlist_divider{
+//         border:0;
+//         border-top: 0.0625rem solid $mercury;
+//         margin: 0;
+//     }

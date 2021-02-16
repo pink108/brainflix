@@ -1,0 +1,33 @@
+.site-video{
+    // border: 2px dashed blue;
+    @extend .container;
+    @include tablet{
+        padding:0 1.5rem;
+        background-color: black;
+        display: flex;
+        justify-content:center;
+    }
+    @include desktop{
+        padding:0 180px;
+
+    }
+
+    &__video {
+         //border: 2px dashed red;
+        margin-top:0;
+        max-width: 100%;
+        min-height:183px;
+        // min-height:183px;
+        //min-height:13.299418604651162vw;
+
+        @include tablet{
+            max-width: 700px;
+            min-height: 400px;
+        }
+        @include desktop{
+            max-width: 944px;
+            min-height: 540px;
+        }
+
+    }
+}    
