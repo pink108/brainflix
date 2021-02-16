@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Likes(props) {
     return (
@@ -9,4 +9,4 @@ function Likes(props) {
     )
 }
 
-export default Likes
+export default Likes;

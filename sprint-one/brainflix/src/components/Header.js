@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Button from './Button';
 import UserImage from './UserImage';
 
@@ -17,16 +17,14 @@ function Header(props) {
             <input className="site-header__search--text" placeholder="Search"/>
           </div>
           
-          <div className="site-header__testing">
+          <div className="site-header__group">
             <div className="site-header__upload">
               <img className="site-header__upload--icon" src={props.upload} alt="upload the file"/>
               <Button text="UPLOAD" className="site-header__upload--text" />
-              {/* <button className="site-header__upload--text" type="submit">UPLOAD</button> */}
             </div>
 
             <div className="site-header__user">
               <UserImage className="site-header__user--image" user={props.user}/>
-              {/* <img className="site-header__user--image" src={props.user} alt="user image"/> */}
             </div>
           </div>
         </div>
@@ -35,7 +33,7 @@ function Header(props) {
   )
 }
 
-export default Header
+export default Header;
 
 
 

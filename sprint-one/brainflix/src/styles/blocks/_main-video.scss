@@ -1,99 +1,97 @@
 .main-video{
-    //border: 2px dashed red;
+    overflow: auto;
     @extend .container;
     &__container{
-        border: 2px dashed red;
         padding:0 1rem;
         @include tablet{
             padding:0 1.5rem;
         }  
         @include desktop{
             padding-top:0;
-            padding-left:180px;
-            padding-right: 32px;
+            padding-left:11.25rem;
+            padding-right: 0;
             margin-right:0;
-            // width:80%;
-            
-            //width:75%;
         }    
-
     }
 
     &__title{
         margin:0 auto;
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 1.5rem;
+        line-height: 2rem;
         font-weight: 600;
         color:$black;   
-        padding-top: 32px;   
+        padding-top: 2rem;   
         
         @include tablet{
-            padding-top: 48px;
-            font-size: 36px;
-            line-height: 44px;
+            padding-top:3rem;
+            font-size: 2.25rem;
+            line-height:2.75rem;
             font-weight: 600;
         }
         @include desktop{
-            padding-top: 48px;
+            padding-top:2.375rem;
         }
     }
 
     &__information{
-        // border: 2px dashed red;
         @include tablet{
-            padding-top: 24px;
-            padding-bottom: 24px;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
             display:flex;
             align-items: flex-start;
             justify-content: space-between;            
         } 
-        
+
+        @include desktop{
+            padding-right: 2rem;
+            padding-top:1rem;
+        }        
     }
 
     &__content{
         display: flex;
-        padding-top:16px; 
-        padding-bottom: 32px;
+        padding-top:1rem; 
+        padding-bottom:2rem;
 
         @include tablet{
             padding:0;
             display:flex;
             align-items: baseline;                
         }
-
     }
 
     &__name{
         margin:0;
-        font-size: 14px;
-        line-height: 22px;
+        font-size:0.875rem;
+        line-height:1.375rem;
         font-weight: 600;
         color:$black;  
-        padding-right: 8px;
+        padding-right:0.5rem;
 
         @include tablet{
-            font-size: 20px;
-            line-height: 24px;
+            font-size:1.25rem;
+            line-height:1.5rem;
             font-weight: 600;
         }
     }
 
     &__date{
         margin:0;
-        font-size: 14px;
-        line-height: 22px;
+        font-size:0.875rem;
+        line-height:1.375rem;
         font-weight: 500;
         color:$silver; 
+
         @include tablet{
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 1rem;
+            line-height:1.5rem;
             font-weight: 500;
         }       
     }
 
     &__info{
         display: flex;
-        padding-bottom: 24px;
+        padding-bottom:1.5rem;
 
         @include tablet{
             padding:0;
@@ -101,51 +99,37 @@
     }
 
     &__views{
-        padding-right:16px;
+        padding-right:1rem;
         display: flex;
 
         @include tablet{
-            padding-right: 24px;
+            padding-right:1.5rem;
         }
     }
 
     &__viewsicon{
         margin:0;
-        padding-right: 8px;
-
+        padding-right:0.5rem;
     }
+
     &__viewscount{
         margin:0;
-
-
     }
 
     &__likes{
         margin:0;
         display: flex;
-
     }
 
     &__likesicon{
         margin:0;
-        padding-right: 8px;
+        padding-right:0.5rem;
     }
 
     &__likescount{
         margin:0;
     }
 
-    // &__divider{
-    //     //display: block;
-    //     color:$mercury;
-    //     margin-top: 0;
-    //     margin-bottom: 0;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     border-style: inset;
-    //     border-width: 1px;
-
-    // }
     &__divider{
         border:0;
         border-top: 0.0625rem solid $mercury;
@@ -154,19 +138,17 @@
 
     &__description{
         margin:0;
-        padding-top:24px;
-        padding-bottom: 40px;
+        padding-top:1.5rem;
+        padding-bottom:2.5rem;
 
         @include tablet{
-            padding-top:40px;
-            padding-bottom: 64px;
+            padding-top:2.5rem;
+            padding-bottom:4rem;
             width:85%;
         }
+        
         @include desktop{
-            // padding-top:40px;
-            // padding-bottom: 64px;
-            width:65%;
+            width:85%;
         }
-
     }
 }

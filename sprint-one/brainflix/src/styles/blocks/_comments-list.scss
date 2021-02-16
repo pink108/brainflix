@@ -1,5 +1,4 @@
 .commentlist{
-    border: 2px dashed green;
     list-style: none;
     margin:0 auto;
     padding:0  1rem;
@@ -11,9 +10,9 @@
         justify-content: center; 
         padding:0  1.5rem;      
     }
+
     @include desktop{
-        padding: 0 180px;
-        // width:75%;
+        padding-left:11.25rem;
     }
     
     &__container{
@@ -30,7 +29,6 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            // max-width: 528px;
         }
     }
 
@@ -38,6 +36,7 @@
         border:0;
         border-top: 0.0625rem solid $mercury;
         margin: 0;
+        width:100%;
     }
 
     &__item{
@@ -60,12 +59,17 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+
+        @include desktop{
+            width:100%;
+        }
     }
 
     &__commentgroup{
         width: 100%;
         display: flex;  
-        justify-content: space-between;   
+        justify-content: space-between;  
+        
         @include tablet{
             justify-content: unset; 
             
@@ -105,5 +109,8 @@
         font-weight: 400;
         padding-bottom:1.5rem;
         width:100%;
+        @include tablet{
+            padding-right:2.5rem;
+        }
     }        
 }

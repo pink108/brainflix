@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function UserImage(props) {
     return (
@@ -6,4 +6,4 @@ function UserImage(props) {
     )
 }
 
-export default UserImage
+export default UserImage;

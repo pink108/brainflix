@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import TimeStamp from './TimeStamp';
 
 function CommentItem(props) {
@@ -10,7 +10,6 @@ function CommentItem(props) {
                 <div className="commentlist__commentgroup">
                     <p className="commentlist__username">{props.name}</p>
                     <TimeStamp className="commentlist__timestamp" timestamp={props.timestamp}/>
-                    {/* <p className="commentlist__timestamp">{new Date(comment.timestamp).toLocaleDateString()}</p> */}
                 </div>
                 <p className="commentlist__usercomment">{props.comment}</p>
             </div>
@@ -19,4 +18,4 @@ function CommentItem(props) {
     )
 }
 
-export default CommentItem
+export default CommentItem;

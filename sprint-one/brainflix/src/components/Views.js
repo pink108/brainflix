@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Views(props) {
     return (
@@ -9,4 +9,4 @@ function Views(props) {
     )
 }
 
-export default Views
+export default Views;

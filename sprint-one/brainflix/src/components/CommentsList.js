@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
 import CommentItem from './CommentItem';
 
 
 function CommentsList(props) {
-    // const { id } = props.videoData.comments.id;
     return (
         <div>
             <ul id="commentlist" className= "commentlist"> 
@@ -12,11 +11,10 @@ function CommentsList(props) {
                         <CommentItem  
                         avatar={props.avatar}
                         id={comment.id}
-                        key={comment.id}
+                        temp={comment.id}
                         name={comment.name}
                         comment={comment.comment}
-                        timestamp={comment.timestamp}
-                        />
+                        timestamp={comment.timestamp}/>
                         <hr className="commentlist__divider"/>
                     </div>                        
                 ))}                         
@@ -25,4 +23,4 @@ function CommentsList(props) {
     )
 }
 
-export default CommentsList
+export default CommentsList;

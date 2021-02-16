@@ -15,9 +15,9 @@
     max-width: 100%;
   }
   
-  a {
-    //text-decoration: none;
-  }
+  // a {
+  //   //text-decoration: none;
+  // }
 
   .container{
     // border: 2px dashed red;
@@ -32,19 +32,16 @@
   .main-section {
     @include desktop{  
       display: flex;
-      padding-right:180px;
-      // align-items: flex-start;
+      padding-right:11.25rem;      
     }
 
     &__left {
       @include desktop{ 
         width:100%;
-        // width: 75%;
       }
     }
     &__right {
       @include desktop{
-      width: 40%;
       }
     }
   }
