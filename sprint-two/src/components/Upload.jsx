@@ -1,8 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import videotpreview from "../assets/images/Upload-video-preview.jpg";
-import { Link } from 'react-router-dom';
-
+import { Link, Redirect, useHistory} from 'react-router-dom';
 
 class Upload extends React.Component {
     state={
@@ -38,28 +37,45 @@ class Upload extends React.Component {
         });
     };
 
+    
+
     handleSubmit = (event) => {
-        alert("Video is uploaded");
         event.preventDefault();
-    }
-
-    handleClick = () => {
-        alert("Uploaded Thanks");
-
         if (!this.state.video_title) {
-        alert("Video title can not be empty.");
-        return;
+            alert("Video title can not be empty.");
+            return;
         }
 
         if (!this.state.video_description) {
             alert("Video description can not be empty.");
             return;
-            }
-    
-        if (!this.state.video_title && !this.state.video_description) {
-        alert("Video Uploaded Successfully!");
-        return;
+            } 
+        if (this.state.video_title && this.state.video_description) {
+            alert("Video Uploaded Successfully!");
+            return;
         }
+        
+        // alert("Video is uploaded");
+       
+    }
+
+    handleClick = () => {
+        alert("Video is uploaded");
+
+        // if (!this.state.video_title) {
+        //     alert("Video title can not be empty.");
+        //     return;
+        // }
+
+        // if (!this.state.video_description) {
+        //     alert("Video description can not be empty.");
+        //     return;
+        //     } 
+    
+        // if (this.state.video_title && this.state.video_description) {
+        //     alert("Video Uploaded Successfully!");
+        //     return;
+        // }
     };
 
     render(){
@@ -77,9 +93,9 @@ class Upload extends React.Component {
                             </div>
                             <div className="upload__formgroup">
                                 <label htmlFor="videotitle" className="upload__formlabel">TITLE YOUR VIDEO</label>
-                                <input type="text" id="videoname" className="upload__input" name="video_title" placeholder="Add a title to your video" onChange={this.updateTitle}  value= {this.state.video_title} required/>
+                                <input type="text" id="videoname" className="upload__input" name="video_title" placeholder="Add a title to your video" onChange={this.updateTitle}  value= {this.state.video_title} />
                                 <label htmlFor="videodescription" className="upload__formlabel">ADD A VIDEO DESCRIPTION</label>
-                                <textarea id="upload" className="upload__textarea" name="video_description" placeholder="Add a description of your video" onChange={this.updateDescription}  value= {this.state.video_Description} required></textarea>
+                                <textarea id="upload" className="upload__textarea" name="video_description" placeholder="Add a description of your video" onChange={this.updateDescription}  value= {this.state.video_Description} ></textarea>
                             </div> 
                         </div>
                         <hr className="upload__divider"/>
